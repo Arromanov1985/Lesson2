@@ -5,21 +5,16 @@
     if(arg3 > result) result = arg3;
     return result;
 }
+//              0 1  2  3  4  5  6  7 8 
+int[] array = {71,62,53,34,25,62,7,18,92};
+array[0] = 72;
+Console.WriteLine(array[0]);
+
+int max = Max(
+    Max(array[0], array[0], array[0]),
+   Max(array[0], array[0], array[0]),
+    Max(array[0], array[0], array[0]));
 
 
-int a1 = 15;
-int b1 = 21;
-int c1 = 39;
-int a2 = 12;
-int b2 = 213;
-int c2 = 33;
-int a3 = 13;
-int b3 = 23;
-int c3 = 33;
-
-int max1 = Max(a1, b1, c1);
-int max2 = Max(a2, b2, c2);
-int max3 = Max(a3, b3, c3);
-int max = Max(max1, max2,max3);
 
 Console.WriteLine(max);
